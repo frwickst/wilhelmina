@@ -45,28 +45,28 @@ The package includes a command-line interface for easy testing and usage:
 
 ```bash
 # Login to test credentials
-wilma login
+wilhelmina login
 
 # Login with credentials from .env file
-wilma login
+wilhelmina login
 
 # List messages (use --no-headless to see the browser)
-wilma messages --no-headless
+wilhelmina messages --no-headless
 
 # Show a specific message
-wilma message 12345
+wilhelmina message 12345
 
 # Debug mode with visible browser
-wilma messages --debug --no-headless
+wilhelmina messages --debug --no-headless
 
 # Interactive mode with message browser UI
-wilma messages -i
+wilhelmina messages -i
 
 # Show only unread messages
-wilma messages --unread
+wilhelmina messages --unread
 
 # Summarize unread messages with AI
-wilma messages-summarize
+wilhelmina messages-summarize
 ```
 
 ### Interactive Mode
@@ -90,10 +90,10 @@ The CLI includes optional AI-powered message summarization using Anthropic's Cla
 
 ```bash
 # Summarize a specific message
-wilma message 12345 --summarize
+wilhelmina message 12345 --summarize
 
 # Summarize all unread messages
-wilma messages-summarize
+wilhelmina messages-summarize
 ```
 
 To use the summarization feature, you need to set the `ANTHROPIC_API_KEY` environment variable in your `.env` file.
